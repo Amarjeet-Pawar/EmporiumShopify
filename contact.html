@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - ResShoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-main1.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" height="30px" width="30px">
+            <img src="images/menu.png" height="30px" width="30px" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+
+
+    <!--------Contact ----------------->
+    <div class="contact">
+        <div class="contact1">
+            <h2>Contact Us</h2>
+            <p>
+                We're here to assist you! Whether you have a question about an order, need help with a product, or just want to say hello, we'd love to hear from you. Choose your preferred method of contact below:
+            </p>
+        </div>
+        <div class="contact2">
+            <h2>Email</h2>
+            <p>
+                Feel free to drop us an email at emporiumshopify@email.com. Our support team will get back to you within 24 hours.
+            </p>
+        </div>
+        <div class="contact3">
+            <h2>Phone</h2>
+            <p>
+                You can reach us by phone at +91-2234124577. Our lines are open [7 days and 24 hours of operation].
+            </p>
+        </div>
+        <div class="contact4">
+            <h2>Live Chat</h2>
+            <p>
+                Click on the chat icon in the bottom right corner to chat with one of our representatives in real-time. We're available [24 hours of live chat availability].
+            </p>
+        </div>
+        <div class="contact5">
+            <h2>Social Media</h2>
+            <p>Stay connected with us on social media! Follow us on Facebook, Twitter, and Instagram for updates, promotions, and more.</p>
+        </div>
+        <div class="contact6">
+            <h2>Visit Us </h2>
+            <p>If you're in the area, come say hi at our physical location: Kasaba Bawada, Kolhapur.</p>
+        </div>
+        <div class="contact7">
+            <p>We're dedicated to providing you with exceptional customer service, so don't hesitate to reach out if you need assistance. Your satisfaction is our priority!</p>
+        </div>
+    </div>
+
+
+    <!-- -------------Footer------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios modile phones.</p>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html"><img src="images/logo-main1.png" width="125px"></a>
+                    <p>Our purpose Is to Sustanibility Make The Pleasure And Benefits Of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupns</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us on</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">No copyright free to use</p>
+        </div>
+
+        <!-- ------------------js for toggle menu----------------- -->
+        <script>
+            /* var MenuItems = document.getElementById("MenuItem")
+             MenuItems.style.maxHeight = "0px";
+     
+             function menutoggle(){
+                 if(MenuItems.style.maxHeight == "0px"){
+                     
+                     MenuItems.style.maxHeight = "200px";
+     
+                 }
+                 else{
+                     MenuItems.style.maxHeight = "0px";
+                 }
+             }*/
+
+            function menutoggle() {
+                var MenuItems = document.getElementById("MenuItems");
+                if (MenuItems.style.display === "block") {
+                    MenuItems.style.display = "none";
+                } else {
+                    MenuItems.style.display = "block";
+                }
+            }
+        </script>
+
+        <!--------js for product gallery -------------->
+
+        <script>
+            var ProductImg = document.getElementById("ProductImg");
+            var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function(){
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function(){
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function(){
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function(){
+                ProductImg.src = SmallImg[3].src;
+            }
+
+        </script>
+
+</body>
+
+</html>
